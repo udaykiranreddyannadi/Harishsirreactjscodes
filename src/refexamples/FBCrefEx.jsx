@@ -87,32 +87,69 @@
 
 //!module style is used for the below code 
 
-import React, { useRef, useState } from 'react';
-import VIDEO from './video.mp4';
-import Style from './example.module.css'; // Ensure the file name is correct
+// import React, { useRef, useState } from 'react';
+// import VIDEO from './video.mp4';
+// import Style from './example.module.css'; // Ensure the file name is correct
+
+// const FBCrefEx = () => {
+//     const videoRef = useRef(null);
+//     console.log(videoRef);
+//     const [isPlaying, setIsPlaying] = useState(false);
+
+//     const playOrPause = () => {
+//         if (isPlaying) {
+//             videoRef.current.pause();
+//         } else {
+//             videoRef.current.play();
+//         }
+//         setIsPlaying(!isPlaying);
+//     };
+
+//     return (
+//         <div id={Style.container}>
+//             <video ref={videoRef} src={VIDEO} className={Style.vid} controls></video> 
+//             <button onClick={playOrPause}>
+//                 {isPlaying ? 'Pause' : 'Play'}
+//             </button>
+//         </div>
+//     );
+// }
+
+// export default FBCrefEx;
+
+
+//!audio examples using ref
+
+import React, { useState, useRef } from 'react';
+import AUDIO from "./audio.mp3";
 
 const FBCrefEx = () => {
-    const videoRef = useRef(null);
-    console.log(videoRef);
-    const [isPlaying, setIsPlaying] = useState(false);
+    const [play, setPlay] = useState(true);
 
-    const playOrPause = () => {
-        if (isPlaying) {
-            videoRef.current.pause();
+    let audioRef = useRef();
+
+    let playAudio = () => {
+        if (play) {
+            audioRef.current.play();
+            setPlay(false);
         } else {
-            videoRef.current.play();
+            audioRef.current.pause();
+            setPlay(true);
         }
-        setIsPlaying(!isPlaying);
-    };
+    }
 
     return (
-        <div id={Style.container}>
-            <video ref={videoRef} src={VIDEO} className={Style.vid} controls></video> 
-            <button onClick={playOrPause}>
-                {isPlaying ? 'Pause' : 'Play'}
-            </button>
+        <div>
+            <audio src={AUDIO} ref={audioRef}></audio>
+            
+            <img 
+                src="https://cdn.pixabay.com/photo/2022/08/24/05/44/duck-7406987_640.jpg" 
+                alt="Cute Duck"
+                width={350}
+                onClick={playAudio}
+            />
         </div>
     );
-}
+};
 
 export default FBCrefEx;

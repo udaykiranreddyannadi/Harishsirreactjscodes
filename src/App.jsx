@@ -12,6 +12,7 @@
 // }
 // export default App;
 
+import UnControlledCBCEx from "./formexamples/UnControlledCBCEx"
 import FBCUseEffectEx from "./hooksexamples/FBCUseEffectEx"
 
 //!function based component
@@ -521,15 +522,46 @@ import FBCUseEffectEx from "./hooksexamples/FBCUseEffectEx"
 //!events examples
 
 // File: App.js
+// import React from 'react';
+// import ONclickEventex from './eventsexamples/ONclickEventex';
+
+// const App = () => {
+//   return (
+//     <div>
+//       <ONclickEventex />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+// //!audio with ref
+// import React from 'react'
+// import FBCrefEx from "./refexamples/FBCrefEx"
+
+// const App = () => {
+//   return (
+//     <div>
+//       <FBCrefEx/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+//!forms validation on react js
+
 import React from 'react';
-import ONclickEventex from './eventsexamples/ONclickEventex';
+//import UnControlledCBCEx from "./formexamples/UnControlledCBCEx";
 
 const App = () => {
   return (
     <div>
-      <ONclickEventex />
+      <UnControlledCBCEx/>
     </div>
   );
-}
+};
 
 export default App;
