@@ -17,7 +17,7 @@
 //     }
 
 //     handleChange1=e=>{
-//         // console.log(e.target.value);
+//          //console.log(e);
 //         this.setState({name:e.target.value})
 //     }
 //     handleChange2=e=>{
@@ -39,25 +39,28 @@
 //         <form onSubmit={this.handleSubmit}>
 //             <div className={Styles.field}>
 //                 <input type="text" placeholder='enter user name'
-//                 name='name'
-//                 value={this.state.name}
+                
+//                 value={this.state.name} //in this value attribute data stored sent to this.state
 //                 onChange={this.handleChange1}
 //                 />
 //             </div>
 //             <div className={Styles.field}>
 //                 <input type="email" placeholder='enter user email'
+                
 //                 value={this.state.email}
 //                 onChange={this.handleChange2}
 //                 />
 //             </div>
 //             <div className={Styles.field}>
 //                 <input type="password" placeholder='enter user password'
+                
 //                 value={this.state.password}
 //                 onChange={this.handleChange3}
 //                 />
 //             </div>
 //             <div className={Styles.field}>
 //                 <input type="tel" placeholder='enter phone number'
+                
 //                 value={this.state.phone}
 //                 onChange={this.handleChange4}
 //                 />
@@ -72,6 +75,8 @@
 // }
 
 
+//**************************************************************************************************************************
+//!for each and everh input we use single function here we have consized form
 
 import React, { Component } from 'react'
 import Styles from "./uncontrolledex.module.css"
@@ -79,6 +84,7 @@ export default class ControlledCBCEx extends Component {
     constructor(){
         super();
         this.state={
+
             name:"",
             email:"",
             password:"",

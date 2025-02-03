@@ -12,9 +12,13 @@
 // }
 // export default App;
 
+import ControlledCBCEx from "./formexamples/ControlledCBCEx";
+import ControlledFBCEx from "./formexamples/ControlledFBCEx";
 import UnControlledCBCEx from "./formexamples/UnControlledCBCEx"
+import UnControlledFBCEx from "./formexamples/UnControlledFBCEx";
+import ControlledForm from "./formproject/ControlledForm";
 import FBCUseEffectEx from "./hooksexamples/FBCUseEffectEx"
-
+import ControlledFBCEx1 from "./formexamples/ControlledFBCEx1";
 //!function based component
 
 // function App(){
@@ -553,15 +557,67 @@ import FBCUseEffectEx from "./hooksexamples/FBCUseEffectEx"
 
 //!forms validation on react js
 
-import React from 'react';
-//import UnControlledCBCEx from "./formexamples/UnControlledCBCEx";
+// import React from 'react';
+// //import UnControlledCBCEx from "./formexamples/UnControlledCBCEx";
 
-const App = () => {
-  return (
-    <div>
-      <UnControlledCBCEx/>
-    </div>
-  );
-};
+// const App = () => {
+//   return (
+//     <div>
+//       {/* <UnControlledCBCEx/> */}
+//       {/* <UnControlledFBCEx/> */}
+//       <ControlledCBCEx/>
+//     </div>
+//   );
+// };
 
-export default App;
+// export default App;
+
+
+// //!form project contrilled form
+// import React from 'react';
+
+// const App = () => {
+//   return (
+//     <div>
+//       <ControlledForm/>
+
+          
+//     </div>
+//   );
+// }
+
+// export default App;
+
+//!form project Uncontrolled form
+// import React from 'react';
+// import UncontrolledForm from './formproject/UncontrolledForm'; // Ensure the path is correct
+
+// const App = () => {
+//   return (
+//     <div>
+//       {/* <ControlledForm /> */}
+//       <UncontrolledForm />
+//     </div>
+//   );
+// };
+
+// export default App;
+
+
+//!controlledFBC
+// import React, { Component } from 'react';
+// //import ControlledFBCEx1 from './ControlledFBCEx1'; // Make sure the path is correct
+
+// class App extends Component {
+//   render() {
+//     return (
+//       <div>
+        
+//       <ControlledFBCEx1/>
+//       </div>
+//     );
+//   }
+// }
+
+// export default App;
+

@@ -1,6 +1,8 @@
  import React, { Component } from 'react'
  import Styles from "./uncontrolledex.module.css";
 class UnControlledCBCEx extends Component {
+    
+    //uncontrollled way of targeting(collection) the data
     nameRef=React.createRef();
     mailRef=React.createRef();
     passRef=React.createRef();
@@ -8,7 +10,7 @@ class UnControlledCBCEx extends Component {
 
      handleSubmit=e=>{
         e.preventDefault();
-        // console.log(this.nameRef.current.value);
+         //console.log(this.nameRef.current.value);
         let name =this.nameRef.current.value;
         let email =this.mailRef.current.value;
         let psw =this.passRef.current.value;
@@ -17,7 +19,7 @@ class UnControlledCBCEx extends Component {
 
     }
   render() {
-    // console.log(this.nameRef);
+     //console.log(this.nameRef);
     return (
        <div id={Styles.formBlock}>
          <form onSubmit={this.handleSubmit}>
@@ -36,7 +38,7 @@ class UnControlledCBCEx extends Component {
              <div className={Styles.field}>
                  <input type="submit" value="Sign Up"/>
              </div>
-     </form>
+         </form>
        </div>
     )
   }
