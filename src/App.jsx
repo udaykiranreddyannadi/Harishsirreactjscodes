@@ -19,6 +19,8 @@ import UnControlledFBCEx from "./formexamples/UnControlledFBCEx";
 import ControlledForm from "./formproject/ControlledForm";
 import FBCUseEffectEx from "./hooksexamples/FBCUseEffectEx"
 import ControlledFBCEx1 from "./formexamples/ControlledFBCEx1";
+
+import Navbar from './routing/Navbar';
 //!function based component
 
 // function App(){
@@ -621,3 +623,62 @@ import ControlledFBCEx1 from "./formexamples/ControlledFBCEx1";
 
 // export default App;
 
+//!react-routing- dom
+// import React, { Suspense } from 'react';
+// import {BrowserRouter,Routes,Route} from "react-router-dom"
+// import Dashboard from "./routing/components/Dashboard";
+// import ClassRooms from "./routing/components/ClassRooms";
+// import Assessments from "./routing/components/Assessments";
+// //import Store from "./routing/components/Store";
+// import Calender from "./routing/components/Calender";
+// import News from "./routing/components/News";
+// import Blog from "./routing/components/Blog";
+// import PageNotFound from "./routing/components/PageNotFound";
+// import FSD1 from "./routing/components/FSD1";
+// import FSD2 from "./routing/components/FSD2";
+// import Users from "./routing/components/Users";
+
+// const Store =React.lazy(()=>import("./routing/components/Store"))
+// //for the above store will not loade unnecessary time , when the user calls it will be loades
+// const App = () => {
+//   return (
+//     <BrowserRouter>
+//       <Navbar/>
+//       <Routes>
+//         {/* Here below path will consider as a link */}
+//         <Route path='/' element={<Dashboard />} />
+//         {/* For dashboard to open in home page */}
+//         <Route path='/classRooms' element={<ClassRooms />}>
+//           <Route path='fsd1' element={<FSD1/>} />
+//           <Route path='fsd2' element={<FSD2/>} />
+//         </Route>
+//         <Route path='/assessments' element={<Assessments />} />
+//         {/* <Route path='/store' element={<Store />} /> */}
+//         <Route path='/store' element={<Suspense fallback="<div> loading</div>"><Store/></Suspense>} /> 
+//         <Route path='/calender' element={<Calender />} />
+//         <Route path='/news' element={<News />} />
+//         <Route path='/blog' element={<Blog />} />
+//         <Route path='*' element={<PageNotFound />} />
+//         {/* except the above. "*" will capture all remaining */}
+//         <Route path='users/:userid' element={<Users/>}/> 
+//         {/* slog */}
+        
+//       </Routes>
+//     </BrowserRouter>
+//   );
+// }
+
+// export default App;
+
+
+import React from 'react'
+
+const App = () => {
+  return (
+    <div>
+      app
+    </div>
+  )
+}
+
+export default App
