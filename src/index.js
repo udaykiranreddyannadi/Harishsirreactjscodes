@@ -1,17 +1,44 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";//used for rcreating elements in >react way
+//react dom library will create virtual dOM
+import ReactDOM from "react-dom/client";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+//it will create one empty container
+//ReactDOM.createRoot(document.getElementById("root")).render(<div><h1> welcome to excel r</h1></div>);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+//above code is created in the form of jsx
+
+//!above code with react js
+// let element= React.createElement("div",{id:"demo"},
+//     React.createElement("h1",null,"hello"),
+//     React.createElement("p",null,"para")
+// );
+
+// ReactDOM.createRoot(document.getElementById("root")).render(element);
+
+// ReactDOM.createRoot(document.getElementById("root")).render(
+// <div id="demo">
+// <h1> welcome to excel r</h1>
+// <p> paragraph</p>
+// </div>
+// );
+
+// let x=1000;
+// let user="faran";
+// ReactDOM.createRoot(document.getElementById("root")).render(
+//     <div id="demo">
+//     <h1> welcome to excel r</h1>
+//     <p> paragraph</p>
+//     {/* <h1>x</h1>
+//     <h1>user</h1> */}
+//     {/* // for the above code  x and user are printed in h1 tags it is not consider as variables */}
+//     {/* for the above variables are called as jsx expressions {} */}
+//     <h1>{x}</h1>
+//     <h1>{user}</h1>
+//     {/* mathematic expression can also be done in jsx expression */}
+//     <h1>{100*4}</h1>
+//     </div>
+//     );
+
+import "./global.css"
+import App from "./App" 
+ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
