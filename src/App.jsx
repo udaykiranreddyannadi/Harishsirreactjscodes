@@ -670,15 +670,20 @@ import Navbar from './routing/Navbar';
 
 // export default App;
 
+//!crud operations
 
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (
-    <div>
+    <div className="bg bg-primary p-3 text-light">
       app
     </div>
   )
 }
 
 export default App
+
+
+//json-server --watch users.json --port=8000
