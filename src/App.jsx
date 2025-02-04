@@ -670,20 +670,33 @@ import Navbar from './routing/Navbar';
 
 // export default App;
 
-//!crud operations
+//!crud operations 
+//!fetching(get) , deleting ,post,put  data forom database(db) using crud operations
 
-import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+// import 'bootstrap/dist/css/bootstrap.min.css'; // This is for using CSS
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './crudoperation/Home';
+import Create from './crudoperation/Create';
+import Update from './crudoperation/Update';
+import Read from './crudoperation/Read';
+import { ToastContainer } from "react-toastify";
 
 const App = () => {
   return (
-    <div className="bg bg-primary p-3 text-light">
-      app
-    </div>
-  )
-}
+    <BrowserRouter>
+      <ToastContainer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/create" element={<Create />} />
+        <Route path="/read" element={<Read />} />
+        <Route path="/Update/:id" element={<Update />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
 
 
-//json-server --watch users.json --port=8000
+//json-server --watch users.json --port=8000 for live server
