@@ -1,30 +1,6 @@
 {
   "users": [
     {
-      "id": "1",
-      "name": "varun",
-      "email": "udaykiran123@gmail.com",
-      "phone": "7894561451"
-    },
-    {
-      "id": "2",
-      "name": "sujatha",
-      "email": "sujatha123@gmail.com",
-      "phone": "7897891451"
-    },
-    {
-      "id": "3",
-      "name": "sandhya",
-      "email": "sandhay3@gmail.com",
-      "phone": "9854561451"
-    },
-    {
-      "id": "4",
-      "name": "kiran",
-      "email": "kiran456@gmail.com",
-      "phone": "7894561452"
-    },
-    {
       "id": "5",
       "name": "priya",
       "email": "priya789@gmail.com",
@@ -35,12 +11,6 @@
       "name": "rajesh",
       "email": "rajesh123@gmail.com",
       "phone": "7894561454"
-    },
-    {
-      "id": "7",
-      "name": "meenakshi",
-      "email": "meenakshi123@gmail.com",
-      "phone": "7894561455"
     },
     {
       "id": "8",
@@ -83,6 +53,18 @@
       "name": "ranger",
       "email": "ranger15@gmail.com",
       "phone": "9874561235"
+    },
+    {
+      "id": "0e00",
+      "name": "sandhya reddy",
+      "email": "reddy@gmail.com",
+      "phone": "7894561237"
+    },
+    {
+      "id": "14be",
+      "name": "sushma",
+      "email": "sushma@gmail.com",
+      "phone": "9874561234"
     }
   ]
 }

@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { toast } from 'react-toastify';
 
 const Home = () => {
     const [users, setUsers] = useState([]);
@@ -12,6 +13,21 @@ const Home = () => {
             .then(res => setUsers(res.data))
             .catch(err => console.log(err));
     }, []);
+
+    //!for deleting data
+    const deleteUsers = (id) => {
+        axios.delete(`http://localhost:8000/users/${id}`)
+            .then(res => {
+                toast.warning("User deleted successfully");
+                setTimeout(() => {
+                    window.location.reload();
+                }, 1500);
+            })
+            .catch(err => toast.error("User not deleted"));
+    };
+
+    //!view user details
+    
 
     return (
         <div className='container bg-body-secondary'>
@@ -43,8 +59,8 @@ const Home = () => {
                                             <td>{user.phone}</td>
                                             <td>
                                                 <Link to={`/update/${user.id}`} className='btn btn-success me-2'>Edit</Link>
-                                                <button className='btn btn-danger me-2'>Delete</button>
-                                                <Link to={`/view/${user.id}`} className='btn btn-info me-2'>View Details</Link>
+                                                <button onClick={()=>deleteUsers(user.id)} className='btn btn-danger me-2'>Delete</button>
+                                                <Link to={`/read/${user.id}`} className='btn btn-info me-2'>View Details</Link>
                                             </td>
                                         </tr>
                                     );
